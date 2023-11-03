@@ -1,0 +1,12 @@
+{
+  "name": "realtime-chat-api",
+  "version": "1.0.0",
+  "description": "A api to run and handle a realtime chat",
+  "main": "index.js",
+  "author": "Petterson Firmino",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
