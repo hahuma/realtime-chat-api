@@ -6,7 +6,16 @@
   "author": "Petterson Firmino",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "dev": "NODE_ENV=development yarn ts-node-dev-config ./src/server.ts",
+    "ts-node-dev-config": "ts-node-dev --respawn --transpile-only --debug=true --debounce=2000"
+  },
   "devDependencies": {
+    "@types/node": "^20.8.10",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
   }
 }
