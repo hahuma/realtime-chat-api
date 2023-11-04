@@ -7,6 +7,6 @@ if (!HOST || !PORT) {
   console.error("Server enviroment variables are not defined");
 }
 
-app.listen(PORT, HOST, () =>
-  console.log(`Server running on http://${HOST}:${PORT}`)
-);
+app.listen({ host: HOST, port: PORT }, () => {
+  console.log(`Server running on http://${HOST}:${PORT}`);
+});
